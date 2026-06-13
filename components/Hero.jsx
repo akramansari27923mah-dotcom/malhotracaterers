@@ -65,7 +65,7 @@ const Hero = () => {
               className="group flex items-center gap-2 bg-linear-to-r from-amber-500 to-yellow-600 px-8 py-4 rounded-full font-semibold hover:scale-105 transition-all"
             >
               <Calendar size={18} />
-              Book Your Event
+              Inquiry
             </Link>
 
             <Link

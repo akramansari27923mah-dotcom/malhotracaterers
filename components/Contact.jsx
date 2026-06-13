@@ -1,6 +1,7 @@
 "use client";
 
 import { api } from "@/lib/axios";
+import { showSuccess } from "@/lib/toaster";
 import { ArrowLeft, LoaderCircle } from "lucide-react";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -35,7 +36,9 @@ const ContactPage = () => {
       e.preventDefault();
       setLoading(true);
       const res = await api.post("/contact", formValue);
-      console.log(res);
+      if (res?.success) {
+        showSuccess("Submitted");
+      }
     } catch (err) {
       console.log(err?.message);
     } finally {

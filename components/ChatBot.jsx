@@ -23,8 +23,8 @@ const ChatBot = () => {
       const { data } = await api.post("/chatbot", { prompt });
       setMessage((prev) => [...prev, { role: "ai", content: data?.aiReply }]);
     } catch (err) {
-      console.log(err.message);
-      setMessage((prev) => [...prev, { role: "ai", contect: err.message }]);
+      console.log(err?.message);
+      setMessage((prev) => [...prev, { role: "ai", contect: err?.message }]);
     } finally {
       setLoading(false);
       setPrompt("");
@@ -48,14 +48,14 @@ const ChatBot = () => {
     <>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-3 right-3 z-50"
+        className="fixed bottom-3 right-3 z-50 "
       >
         <Image
           src="/chat.png"
           alt="Chat"
           width={70}
           height={70}
-          className="hover:scale-110 transition-all duration-300"
+          className="hover:scale-110 transition-all duration-300 animate___animated animate__pulse animate__infinite"
         />
       </button>
 

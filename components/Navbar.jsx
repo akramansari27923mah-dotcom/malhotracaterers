@@ -5,9 +5,15 @@ import Link from "next/link";
 import { menu } from "@/lib/menu";
 import { FaInstagram } from "react-icons/fa";
 import { useState } from "react";
+import { showSuccess } from "@/lib/toaster";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const copyNumber = (num) => {
+    showSuccess('Copied')
+    window.navigator.clipboard(num)
+  }
 
   return (
     <nav className="fixed top-0 left-0 z-50 w-full border-b border-white/10 backdrop-blur-xl bg-black/40">
@@ -47,7 +53,7 @@ const Navbar = () => {
         </div>
 
         <div className="flex justify-center items-center gap-4">
-          <button className="group flex items-center gap-3 px-5 py-3 rounded-full bg-linear-to-r from-amber-500 to-yellow-600 hover:from-yellow-500 hover:to-amber-600 transition-all duration-300 shadow-lg shadow-amber-500/30 hover:scale-105">
+          <button  onClick={() => copyNumber(7905808958)} className="group flex items-center gap-3 px-5 py-3 rounded-full bg-linear-to-r from-amber-500 to-yellow-600 hover:from-yellow-500 hover:to-amber-600 transition-all duration-300 shadow-lg shadow-amber-500/30 hover:scale-105">
             <PhoneCall
               size={18}
               className="group-hover:rotate-12 transition-all"
@@ -76,7 +82,7 @@ const Navbar = () => {
       {/* side bar */}
 
       <aside
-        className={`w-100 md:hidden transition-all p-5 duration-300 overflow-hidden h-screen fixed top-0 left-0 bg-black/90  backdrop-blur-md ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
+        className={`w-full md:hidden transition-all p-5 duration-300 overflow-hidden h-screen fixed top-0 left-0 bg-black/90  backdrop-blur-md ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
       >
         <div className="flex justify-between items-center ">
           <Link
@@ -118,7 +124,7 @@ const Navbar = () => {
             </Link>
           ))}
 
-          <button className="group flex items-center gap-3 px-5 py-3 rounded-full bg-linear-to-r from-amber-500 to-yellow-600 hover:from-yellow-500 hover:to-amber-600 transition-all duration-300 shadow-lg shadow-amber-500/30 hover:scale-105">
+          <button onClick={copyNumber} className="group flex items-center gap-3 px-5 py-3 rounded-full bg-linear-to-r from-amber-500 to-yellow-600 hover:from-yellow-500 hover:to-amber-600 transition-all duration-300 shadow-lg shadow-amber-500/30 hover:scale-105">
             <PhoneCall
               size={18}
               className="group-hover:rotate-12 transition-all"

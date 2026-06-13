@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const MainLayout = ({children}) => {
-  return (
-    <div>{children}</div>
-  )
-}
+const MainLayout = ({ children }) => {
+  return <div>{children}</div>;
+};
 
-export default MainLayout
+export default MainLayout;
