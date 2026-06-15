@@ -33,7 +33,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-3xl md:text-5xl font-bold leading-tight"
+            className="text-4xl md:text-5xl font-bold leading-tight"
           >
             Making Every
             <br />
