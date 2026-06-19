@@ -48,27 +48,29 @@ const ContactPage = () => {
   };
 
   return (
-    <section className="min-h-screen bg-black py-20 px-6">
+    <section className="min-h-screen bg-white dark:bg-black py-20 px-6">
       <Link
         href={"/"}
-        className="fixed top-8 left-8 bg-gray-900 border border-gray-800 rounded-2xl px-4 py-2 font-sans tracking-wider flex justify-center items-center gap-2 z-20 hover:scale-105 transition-all duration-300"
+        className="fixed top-8 left-8 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl px-4 py-2 font-sans tracking-wider flex justify-center items-center gap-2 z-20 hover:scale-105 transition-all duration-300 shadow-lg dark:shadow-none"
       >
-        <ArrowLeft size={20} />
-        <span>Back</span>
+        <ArrowLeft size={18} />
+        Back
       </Link>
 
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-14">
-          <span className="text-amber-400 uppercase tracking-[6px]">
+          <span className="text-amber-500 dark:text-amber-400 uppercase tracking-[6px]">
             Contact Us
           </span>
 
-          <h1 className="text-5xl md:text-6xl font-bold text-white mt-4">
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mt-4">
             Let`s Plan Your
-            <span className="block text-amber-400">Special Occasion</span>
+            <span className="block text-amber-500 dark:text-amber-400">
+              Special Occasion
+            </span>
           </h1>
 
-          <p className="text-gray-400 mt-5 max-w-2xl mx-auto">
+          <p className="text-gray-600 dark:text-gray-400 mt-5 max-w-2xl mx-auto">
             Wedding Catering, Corporate Events, Birthday Parties, Destination
             Weddings, Decoration & Event Management.
           </p>
@@ -76,7 +78,7 @@ const ContactPage = () => {
 
         <form
           onSubmit={submitForm}
-          className="max-w-4xl mx-auto bg-white/5 backdrop-blur-xl border border-amber-500/20 rounded-3xl p-8 md:p-12"
+          className="max-w-4xl mx-auto bg-white dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-amber-500/20 rounded-3xl p-8 md:p-12 shadow-xl dark:shadow-none"
         >
           <div className="grid md:grid-cols-2 gap-6">
             <input
@@ -84,7 +86,7 @@ const ContactPage = () => {
               onChange={handelInput}
               type="text"
               placeholder="Your Name"
-              className="bg-black/40 border border-white/10 rounded-xl px-5 py-4 text-white outline-none focus:border-amber-500"
+              className="bg-gray-50 dark:bg-black/40 border border-gray-300 dark:border-white/10 rounded-xl px-5 py-4 text-gray-900 dark:text-white outline-none focus:border-amber-500 transition-colors"
             />
 
             <input
@@ -92,7 +94,7 @@ const ContactPage = () => {
               onChange={handelInput}
               type="email"
               placeholder="Your Email"
-              className="bg-black/40 border border-white/10 rounded-xl px-5 py-4 text-white outline-none focus:border-amber-500"
+              className="bg-gray-50 dark:bg-black/40 border border-gray-300 dark:border-white/10 rounded-xl px-5 py-4 text-gray-900 dark:text-white outline-none focus:border-amber-500 transition-colors"
             />
           </div>
 
@@ -102,13 +104,13 @@ const ContactPage = () => {
               onChange={handelInput}
               type="tel"
               placeholder="Phone Number"
-              className="bg-black/40 border border-white/10 rounded-xl px-5 py-4 text-white outline-none focus:border-amber-500"
+              className="bg-gray-50 dark:bg-black/40 border border-gray-300 dark:border-white/10 rounded-xl px-5 py-4 text-gray-900 dark:text-white outline-none focus:border-amber-500 transition-colors"
             />
 
             <select
               name="eventType"
               onChange={handelInput}
-              className="bg-black/40 border border-white/10 rounded-xl px-5 py-4 text-white outline-none focus:border-amber-500"
+              className="bg-gray-50 dark:bg-black/40 border border-gray-300 dark:border-white/10 rounded-xl px-5 py-4 text-gray-900 dark:text-white outline-none focus:border-amber-500 transition-colors"
             >
               <option>Choose Event Type</option>
               <option>Wedding Catering</option>
@@ -125,7 +127,7 @@ const ContactPage = () => {
               name="date"
               onChange={handelInput}
               type="date"
-              className="bg-black/40 border w-full border-white/10 rounded-xl px-5 py-4 text-white outline-none focus:border-amber-500"
+              className="bg-gray-50 dark:bg-black/40 border border-gray-300 dark:border-white/10 rounded-xl px-5 py-4 text-gray-900 dark:text-white outline-none focus:border-amber-500 transition-colors"
             />
 
             <input
@@ -133,7 +135,7 @@ const ContactPage = () => {
               onChange={handelInput}
               placeholder="Event Location"
               type="text"
-              className="bg-black/40 border w-full border-white/10 rounded-xl px-5 py-4 text-white outline-none focus:border-amber-500"
+              className="bg-gray-50 dark:bg-black/40 border border-gray-300 dark:border-white/10 rounded-xl px-5 py-4 text-gray-900 dark:text-white outline-none focus:border-amber-500 transition-colors"
             />
           </div>
 
@@ -151,7 +153,7 @@ const ContactPage = () => {
               onChange={handelInput}
               placeholder="Budget"
               type="text"
-              className="bg-black/40 border w-full border-white/10 rounded-xl px-5 py-4 text-white outline-none focus:border-amber-500"
+              className="bg-gray-50 dark:bg-black/40 border border-gray-300 dark:border-white/10 rounded-xl px-5 py-4 text-gray-900 dark:text-white outline-none focus:border-amber-500 transition-colors"
             />
           </div>
 
@@ -160,7 +162,7 @@ const ContactPage = () => {
             name="message"
             rows={6}
             placeholder="Tell us about your event..."
-            className="w-full mt-6 bg-black/40 border border-white/10 rounded-xl px-5 py-4 text-white outline-none focus:border-amber-500"
+            className="w-full mt-6 bg-gray-50 dark:bg-black/40 border border-gray-300 dark:border-white/10 rounded-xl px-5 py-4 text-gray-900 dark:text-white outline-none focus:border-amber-500 transition-colors"
           />
 
           <button className="mt-8 w-full md:w-auto bg-linear-to-r from-amber-500 to-yellow-600 px-10 py-4 rounded-full text-white font-semibold hover:scale-105 transition-all duration-300 cursor-pointer">

@@ -16,7 +16,7 @@ const Services = () => {
           </span>
         </h2>
 
-        <p className="mt-6 max-w-3xl mx-auto text-gray-400 text-lg">
+        <p className="mt-6 max-w-3xl mx-auto dark:text-gray-400 text-black/70 text-lg">
           From wedding catering and corporate events to flower decoration,
           balloon decoration, and complete event management.
         </p>
@@ -34,11 +34,11 @@ const Services = () => {
                 <Icon className="text-amber-400" size={30} />
               </div>
 
-              <h3 className="text-2xl font-bold text-white mb-4">
+              <h3 className="text-2xl font-bold dark:text-gray-400 text-black/70 mb-4">
                 {service.title}
               </h3>
 
-              <p className="text-gray-400 leading-relaxed">
+              <p className="dark:text-gray-400 text-black/70 leading-relaxed">
                 {service.description}
               </p>
             </div>

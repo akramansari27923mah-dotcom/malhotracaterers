@@ -33,7 +33,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-4xl md:text-5xl font-bold leading-tight"
+            className="text-4xl md:text-5xl font-bold leading-tight text-white dark:text-whitet"
           >
             Making Every
             <br />
@@ -48,7 +48,7 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
-            className="mt-6 text-gray-300 text-lg max-w-xl"
+            className="mt-6 text-gray-100 text-lg max-w-xl"
           >
             Wedding Catering, Corporate Events, Kitty Parties, Destination
             Weddings, Birthday Celebrations & Complete Event Planning Services.
@@ -62,7 +62,7 @@ const Hero = () => {
           >
             <Link
               href={"/contact"}
-              className="group flex items-center gap-2 bg-linear-to-r from-amber-500 to-yellow-600 px-8 py-4 rounded-full font-semibold hover:scale-105 transition-all"
+              className="group flex items-center gap-2 bg-linear-to-r from-amber-500 to-yellow-600 px-8 text-white dark:text-black py-4 rounded-full font-semibold hover:scale-105 transition-all"
             >
               <Calendar size={18} />
               Inquiry
@@ -70,7 +70,7 @@ const Hero = () => {
 
             <Link
               href={"#services"}
-              className="group flex items-center gap-2 border border-amber-500 px-8 py-4 rounded-full hover:bg-amber-500/10 transition-all"
+              className="group flex items-center gap-2 text-white border border-amber-500 px-8 py-4 rounded-full hover:bg-amber-500/10 transition-all"
             >
               View Services
               <MoveDownRight

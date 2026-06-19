@@ -33,7 +33,7 @@ const AboutPage = () => {
             <span className="text-amber-400">Culinary Experiences</span>
           </h2>
           
-          <p className="text-sm md:text-base leading-relaxed text-gray-300 font-light">
+          <p className="text-sm md:text-base leading-relaxed text-gray-500 dark:text-white font-light">
             Welcome to <strong className="text-amber-400 font-medium">Malhotra Caterers</strong>, your premier partner for exceptional 
             event catering and management services in Uttar Pradesh and the NCR 
             region. Based out of Kanpur Nagar, we specialize in turning your 
@@ -41,16 +41,16 @@ const AboutPage = () => {
             culinary creations and flawless event execution.
           </p>
 
-          <p className="text-sm md:text-base leading-relaxed text-gray-300 font-light">
-            Whether you are hosting an intimate house party of <span className="text-white font-semibold">50 guests</span> or a grand wedding 
-            celebration for <span className="text-white font-semibold">10,000 people</span>, we have the expertise, passion, and 
+          <p className="text-sm md:text-base leading-relaxed text-gray-500 dark:text-gray-300 font-light">
+            Whether you are hosting an intimate house party of <span className="font-semibold dark:text-white text-black">50 guests</span> or a grand wedding 
+            celebration for <span className="dark:text-white text-black font-semibold">10,000 people</span>, we have the expertise, passion, and 
             infrastructure to manage it all smoothly.
           </p>
 
           <div className="pt-4">
             <Link 
               href="/contact" 
-              className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-black bg-amber-400 rounded-xl transition-all duration-300 hover:bg-amber-300 hover:shadow-lg hover:shadow-amber-500/20 active:scale-95 group"
+              className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-white dark:text-black bg-amber-400 rounded-xl transition-all duration-300 hover:bg-amber-300 hover:shadow-lg hover:shadow-amber-500/20 active:scale-95 group"
             >
               Get a Free Quote
               <svg 

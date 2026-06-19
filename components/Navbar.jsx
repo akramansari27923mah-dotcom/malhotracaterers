@@ -5,6 +5,7 @@ import Link from "next/link";
 import { menu } from "@/lib/menu";
 import { FaInstagram } from "react-icons/fa";
 import { useState } from "react";
+import { Toggle } from "./Toggal";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,6 +52,9 @@ const Navbar = () => {
         </div>
 
         <div className="flex justify-center items-center gap-4 ">
+
+            <Toggle />
+
           <button
             onClick={call}
             className="group flex items-center gap-3 px-5 py-3 rounded-full bg-linear-to-r from-amber-500 to-yellow-600 hover:from-yellow-500 hover:to-amber-600 transition-all duration-300 shadow-lg shadow-amber-500/30 hover:scale-105"
@@ -81,7 +85,7 @@ const Navbar = () => {
       {/* side bar */}
 
       <aside
-        className={`w-full md:hidden transition-all p-5 duration-300 overflow-hidden h-screen fixed top-0 left-0 bg-black/90  backdrop-blur-md ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
+        className={`w-full md:hidden transition-all p-5 duration-300 overflow-hidden h-screen fixed top-0 left-0 bg-black/90  backdrop-blur-md ${isOpen ? "translate-x-0" : "-translate-x-full"} overflow-scroll hide-scroll`}
       >
         <div className="flex justify-between items-center ">
           <Link
@@ -110,7 +114,7 @@ const Navbar = () => {
           />
         </div>
 
-        <div className="flex flex-col  items-center gap-10">
+        <div className="flex flex-col items-center gap-10">
           {menu.map((item, index) => (
             <Link
               key={index}
@@ -122,6 +126,8 @@ const Navbar = () => {
               <span className="absolute left-0 -bottom-2 h-0.5 w-0 bg-amber-500 transition-all duration-300 group-hover:w-full"></span>
             </Link>
           ))}
+
+          <Toggle />
 
           <button
             onClick={call}

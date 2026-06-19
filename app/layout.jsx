@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,8 +36,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Malhotra Caterers | Kanpur",
-    description:
-      "Best catering services for weddings & events in Kanpur.",
+    description: "Best catering services for weddings & events in Kanpur.",
   },
 };
 
@@ -46,10 +46,17 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col" cz-shortcut-listen="true">
+      <body className="min-h-full flex flex-col" cz-shortcut-listen="true" suppressHydrationWarning>
         <main>
-          {children}
-          <Toaster />
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+            <Toaster />
+          </ThemeProvider>
         </main>
       </body>
     </html>
