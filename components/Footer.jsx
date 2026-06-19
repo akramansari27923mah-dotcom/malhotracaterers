@@ -94,7 +94,7 @@ const Footer = () => {
               <Link
                 target="_blank"
                 href="https://www.instagram.com/malhotracatererkanpur?igsh=MjFqN2twODl5MHVy&utm_source=qr"
-                className="w-10 h-10 rounded-full bg-white/5 border border-amber-500/20 flex items-center justify-center hover:bg-amber-500 hover:text-black transition-all"
+                className="w-10 h-10 rounded-full bg-white/5 border border-amber-500/20 flex items-center justify-center hover:bg-amber-500 text-white   hover:text-black transition-all"
               >
                 <FaInstagram size={18} />
               </Link>
