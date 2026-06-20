@@ -12,7 +12,7 @@ const Hero = () => {
         backgroundImage: "url('/hero.png')",
       }}
     >
-      <div className="absolute inset-0 bg-linear-to-r from-black via-black/80 to-black/40" />
+      <div className="absolute inset-0" />
 
       <div className="absolute inset-0 bg-black/10 animate-pulse" />
 
