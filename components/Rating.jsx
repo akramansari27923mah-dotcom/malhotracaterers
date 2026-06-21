@@ -30,7 +30,7 @@ const RatingPage = () => {
             />
 
             <p className="p-5 text-center capitalize tracking-wider border-t border-amber-500/20 hover:border-amber-500">
-              {[...Array(items.name === 'Sakshi Tiwari' ? (3) : (5))].map((_, ind) => (
+              {[...Array(items?.name === 'Sakshi Tiwari' ? (3) : (5))].map((_, ind) => (
                 <span key={ind}>⭐</span>
               ))}
               {items?.name}

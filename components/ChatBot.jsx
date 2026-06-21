@@ -60,17 +60,7 @@ const ChatBot = () => {
       </button>
 
       <div
-        className={`
-          fixed bottom-15 md:right-15 right-3 z-50
-          w-[95%] max-w-95
-          h-150
-          rounded-3xl
-          overflow-hidden
-          border border-amber-500/20
-          bg-black/80
-          backdrop-blur-2xl
-          shadow-2xl shadow-black/50
-          transition-all duration-500
+        className={` fixed bottom-15 md:right-15 right-3 z-50 w-[95%] max-w-95 h-150 rounded-3xl overflow-hidden border border-amber-500/20  bg-black/80 backdrop-blur-2xl shadow-2xl shadow-black/50 transition-all duration-500
           ${
             isOpen
               ? "opacity-100 translate-y-0"
@@ -110,7 +100,6 @@ const ChatBot = () => {
         </div>
 
         <div className="h-115 overflow-y-auto hide-scroll p-4 space-y-4">
-
           {message.map((msg, ind) => (
             <div
               key={ind}
@@ -130,31 +119,12 @@ const ChatBot = () => {
               )}
 
               <div
-                className={`
-        max-w-[85%]
-        px-4 py-3
-        rounded-2xl
-        text-sm md:text-base
-        whitespace-pre-wrap
-        wrap-break-word
-        transition-all duration-300
-        shadow-lg
+                className={` max-w-[85%] px-4 py-3 rounded-2xl text-sm md:text-base whitespace-pre-wrap wrap-break-word transition-all duration-300 shadow-lg
 
         ${
           msg.role === "user"
-            ? `
-             bg-amber-400
-              text-white
-              rounded-br-md
-              shadow-amber-500/20
-            `
-            : `
-              bg-white/10
-              backdrop-blur-md
-              border border-white/10
-              text-white
-              rounded-bl-md
-            `
+            ? ` bg-amber-400 text-white rounded-br-md shadow-amber-500/20`
+            : `bg-white/10 backdrop-blur-md border border-white/10  text-white  rounded-bl-md`
         }
 
       `}
@@ -165,7 +135,7 @@ const ChatBot = () => {
             </div>
           ))}
 
-           {loading && <TypingLoader />}
+          {loading && <TypingLoader />}
         </div>
 
         <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-white/10 bg-black/50">
@@ -176,28 +146,12 @@ const ChatBot = () => {
               onChange={(e) => setPrompt(e?.target?.value)}
               value={prompt}
               placeholder="Type your message..."
-              className="
-                flex-1
-                bg-white/5
-                border border-white/10
-                rounded-full
-                px-4 py-3
-                text-white
-                placeholder:text-gray-400
-                outline-none
-                focus:border-amber-500
+              className=" flex-1  bg-white/5 border border-white/10 rounded-full px-4 py-3  text-white  placeholder:text-gray-400 outline-none  focus:border-amber-500
               "
             />
 
             <button
-              className="
-                w-12 h-12
-                rounded-full
-                bg-amber-500
-                text-black
-                flex items-center justify-center
-                hover:scale-105
-                transition-all
+              className=" w-12 h-12 rounded-full  bg-amber-500  text-black flex items-center justify-center hover:scale-105 transition-all
               "
             >
               <Send size={18} onClick={sendMessage} />

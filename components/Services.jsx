@@ -4,7 +4,7 @@ import { services } from "@/lib/servicesData";
 const Services = () => {
   return (
     <>
-      <div id="services" className="text-center my-10">
+      <div id="services" className="text-center my-5">
         <span className="inline-block px-4 py-2 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 tracking-widest uppercase text-sm">
           Our Services
         </span>

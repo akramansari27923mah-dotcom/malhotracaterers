@@ -38,7 +38,7 @@ const Reviews = () => {
                 key={index}
                 className="bg-white/5 border border-amber-500/20 rounded-3xl overflow-hidden backdrop-blur-xl hover:border-amber-500 shadow transition-all duration-300"
               >
-                {/* Video */}
+            
                 <div className="relative">
                   <video
                     controls
@@ -53,7 +53,7 @@ const Reviews = () => {
                   </div>
                 </div>
 
-                {/* Content */}
+                
                 <div className="p-6">
                   <div className="flex gap-1 mb-3">
                     {[...Array(5)].map((_, i) => (

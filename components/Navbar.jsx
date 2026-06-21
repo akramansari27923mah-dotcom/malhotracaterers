@@ -109,7 +109,7 @@ const Navbar = () => {
           </Link>
 
           <X
-            className=" md:hidden cursor-pointer hover:text-amber-400"
+            className=" md:hidden cursor-pointer text-white hover:text-amber-400"
             onClick={() => setIsOpen(false)}
           />
         </div>

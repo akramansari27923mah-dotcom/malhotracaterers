@@ -16,13 +16,13 @@ export const metadata = {
     title: "Reviews | Malhotra Caterers Kanpur",
     description:
       "See what our happy clients say about Malhotra Caterers in Kanpur for weddings and events.",
-    url: "https://malhotracaterers.vercel.app/review",
+    url: "https://malhotracaterers.vercel.app/review&rating",
     siteName: "Malhotra Caterers",
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "Reviews | Malhotra Caterers Kanpur",
+    title: "Reviews & Rating| Malhotra Caterers Kanpur",
     description:
       "Read customer reviews and testimonials of Malhotra Caterers in Kanpur.",
   },
