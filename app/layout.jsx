@@ -29,7 +29,7 @@ export const metadata = {
     title: "Malhotra Caterers | Kanpur",
     description:
       "Premium catering services for weddings, parties, and events in Kanpur.",
-    url: "https://malhotracaterers.vercel.app",
+    url: "https://www.malhotracaterers.org/",
     siteName: "Malhotra Caterers",
     type: "website",
   },
@@ -46,6 +46,10 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+    <head>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2761657055580047"
+     crossorigin="anonymous" />
+    </head>
       <body className="min-h-full flex flex-col font-sans" cz-shortcut-listen="true" suppressHydrationWarning>
         <main>
           <ThemeProvider

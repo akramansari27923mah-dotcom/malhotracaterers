@@ -16,7 +16,7 @@ export const metadata = {
     title: "Contact | Malhotra Caterers Kanpur",
     description:
       "Get in touch with Malhotra Caterers for bookings and catering services in Kanpur.",
-    url: "https://malhotracaterers.vercel.app/contact",
+    url: "https://www.malhotracaterers.org/contact",
     siteName: "Malhotra Caterers",
     type: "website",
   },

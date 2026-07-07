@@ -16,7 +16,7 @@ export const metadata = {
     title: "Gallery | Malhotra Caterers Kanpur",
     description:
       "View our catering gallery featuring weddings, parties, food setups, and event decorations in Kanpur.",
-    url: "https://malhotracaterers.vercel.app/gallery",
+    url: "https://www.malhotracaterers.org/gallery",
     siteName: "Malhotra Caterers",
     type: "website",
   },

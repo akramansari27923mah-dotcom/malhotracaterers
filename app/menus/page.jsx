@@ -16,7 +16,7 @@ export const metadata = {
     title: "Menus | Malhotra Caterers Kanpur",
     description:
       "Check out our catering menus including wedding, party, and event food packages in Kanpur.",
-    url: "https://malhotracaterers.vercel.app/menus",
+    url: "https://www.malhotracaterers.org/menus",
     siteName: "Malhotra Caterers",
     type: "website",
   },
